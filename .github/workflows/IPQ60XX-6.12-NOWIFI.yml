@@ -1,9 +1,11 @@
 name: IPQ60XX-6.12-NOWIFI
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: 0 19 * * *
+  push:
+    branches:
+      - redmi_ax5          # 只在 redmi_ax5 分支 push 时运行
+  # schedule:
+  #   - cron: 0 19 * * *
 
 env:
   REPO_URL: https://github.com/LiBwrt/openwrt-6.x.git
