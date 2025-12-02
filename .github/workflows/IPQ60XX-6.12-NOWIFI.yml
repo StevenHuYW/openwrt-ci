@@ -1,9 +1,10 @@
 name: IPQ60XX-6.12-NOWIFI
 
 on:
-  pull_request:
-    branches:
-      - redmi_ax5          # 只在 redmi_ax5 分支 push 时运行
+  workflow_dispatch:
+  # pull_request:
+  #   branches:
+  #     - redmi_ax5          # 只在 redmi_ax5 分支 push 时运行
   # schedule:
   #   - cron: 0 19 * * *
 
