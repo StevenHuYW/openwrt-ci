@@ -1,7 +1,7 @@
 name: IPQ60XX-6.12-NOWIFI
 
 on:
-  push:
+  pull_request:
     branches:
       - redmi_ax5          # 只在 redmi_ax5 分支 push 时运行
   # schedule:
